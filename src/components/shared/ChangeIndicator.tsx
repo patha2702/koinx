@@ -1,8 +1,7 @@
 import React from "react";
+import { ChangeIndicatorProps } from "@/types";
 
-interface ChangeIndicatorProps {
-  value: number;
-}
+
 const ChangeIndicator = ({ value }: ChangeIndicatorProps) => {
   return (
     <div className="flex items-center justify-center gap-1  rounded-md bg-[#ebf9f4] px-2 py-1 text-xs">

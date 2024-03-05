@@ -1,5 +1,5 @@
 import React from "react";
-import PathIndicator from "@/components/PathIndicator";
+import PathIndicator from "@/components/shared/PathIndicator";
 
 const Layout = ({ children }: { children: React.ReactNode }) => {
   return (

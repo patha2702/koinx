@@ -1,4 +1,4 @@
-import { navLink, Coin, DashboardTab, RenderLabelValueProps } from "@/types";
+import { navLink, Coin, DashboardTab, RenderLabelValueProps, TeamMemberCardProps } from "@/types";
 
 export const navLinks: navLink[] = [
   {
@@ -128,6 +128,27 @@ export const fundamentalList2: RenderLabelValueProps[] = [
     label: "Market Cap Rank",
     value: "#1",
     additionalInfo: "Nov 20, 2021 (about 1 year)"
+  }
+]
+
+export const teamMemberDetails: TeamMemberCardProps[] = [
+  {
+    name: "Team Member 1",
+    designation: "Your designation",
+    userImg: "/assets/images/user-img.webp",
+    description: "Maecenas venenatis sapien et enim malesuada, ac elementum velit auctor. Ut sed nunc ut dolor sodales scelerisque.Maecenas venenatis sapien et enim malesuada, ac elementum velit auctor. Ut sed nunc ut dolor sodales scelerisque. Vivamus rhoncus sollicitudin odio, sit amet cursus neque vestibulum eget. Vivamus quis erat non orci accumsan fermentum. Sed fringilla lobortis elit a fermentum. Maecenas vestibulum ipsum vel arcu vulputate tempus"
+  },
+  {
+    name: "Team Member 2",
+    designation: "Your designation",
+    userImg: "/assets/images/user-img.webp",
+    description: "Maecenas venenatis sapien et enim malesuada, ac elementum velit auctor. Ut sed nunc ut dolor sodales scelerisque.Maecenas venenatis sapien et enim malesuada, ac elementum velit auctor. Ut sed nunc ut dolor sodales scelerisque. Vivamus rhoncus sollicitudin odio, sit amet cursus neque vestibulum eget. Vivamus quis erat non orci accumsan fermentum. Sed fringilla lobortis elit a fermentum. Maecenas vestibulum ipsum vel arcu vulputate tempus"
+  },
+  {
+    name: "Team Member 2",
+    designation: "Your designation",
+    userImg: "/assets/images/user-img.webp",
+    description: "Maecenas venenatis sapien et enim malesuada, ac elementum velit auctor. Ut sed nunc ut dolor sodales scelerisque.Maecenas venenatis sapien et enim malesuada, ac elementum velit auctor. Ut sed nunc ut dolor sodales scelerisque. Vivamus rhoncus sollicitudin odio, sit amet cursus neque vestibulum eget. Vivamus quis erat non orci accumsan fermentum. Sed fringilla lobortis elit a fermentum. Maecenas vestibulum ipsum vel arcu vulputate tempus"
   }
 ]
 

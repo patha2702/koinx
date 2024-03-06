@@ -51,7 +51,14 @@ export interface CalculateCardProps {
   btnText: string
 }
 
-interface ButtonProps {
+export interface ButtonProps {
   btnText: string,
   targetRoute: string
+}
+
+export interface TeamMemberCardProps {
+  userImg: string,
+  name: string,
+  designation: string,
+  description: string
 }

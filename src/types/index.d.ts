@@ -32,3 +32,26 @@ export interface DashboardTab {
     label: string,
     value: string,
 }
+
+export interface RenderLabelValueProps {
+  label: string;
+  value: string;
+  additionalInfo?: string;
+}
+
+export interface EstimateMeterProps {
+  label: string;
+  value: number;
+  color: string;
+}
+
+export interface CalculateCardProps {
+  label: string,
+  imgPath: string,
+  btnText: string
+}
+
+interface ButtonProps {
+  btnText: string,
+  targetRoute: string
+}

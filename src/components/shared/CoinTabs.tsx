@@ -1,11 +1,12 @@
 "use client";
 import React from "react";
 import { dashboardTabOptions } from "@/constants";
-import { useRouter, usePathname } from "next/navigation";
+import { useRouter, usePathname, useSearchParams } from "next/navigation";
 
 const CoinTabs = () => {
   const path = usePathname();
   const router = useRouter();
+  const searchParams = useSearchParams();
   return (
     <div>
       <ul className="flex items-center justify-start gap-6 border-b border-[#dee1e6]">
@@ -16,7 +17,7 @@ const CoinTabs = () => {
               onClick={() => {
                 router.push(`${path}/?tab=${tab.value}`);
               }}
-              className="cursor-pointer py-2 text-base focus:border-b-2 focus:border-b-[#0052fe]"
+              className={`cursor-pointer py-2 text-base ${tab.value === searchParams.get("tab") ? "border-b-[3px] border-b-[#0052fe] font-semibold text-[#0052fe]" : ""}`}
             >
               {tab.label}
             </li>

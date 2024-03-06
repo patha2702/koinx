@@ -1,9 +1,9 @@
 "use client";
 import React from "react";
-// import { usePathname } from "next/navigation";
+import { usePathname } from "next/navigation";
 
 const PathIndicator = () => {
-  const path = "/cryptocurrencies/bitcoin";
+  const path = usePathname();
   const pathSegments = path.split("/");
   pathSegments.shift();
 

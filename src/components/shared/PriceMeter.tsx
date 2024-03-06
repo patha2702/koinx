@@ -1,18 +1,17 @@
 import React from "react";
 import { PriceMeterProps } from "@/types";
 
-
 const PriceMeter = (props: PriceMeterProps) => {
   return (
-    <div className="py-2">
-      <span className="flex flex-col items-start justify-start gap-2">
-        <span className="text-base">{props.low.label}</span>
-        <span className="text-lg font-medium">{props.low.value}</span>
+    <div className="flex items-center justify-between py-2">
+      <span className="flex flex-col items-start justify-start gap-1">
+        <span className="text-sm">{props.low.label}</span>
+        <span className="text-base font-medium">{props.low.value}</span>
       </span>
-      <div className="h-2 rounded bg-gradient-to-r from-red-500 to-green-500"></div>
-      <span>
-        <span className="text-base">{props.high.label}</span>
-        <span className="text-lg font-medium">{props.high.value}</span>
+      <div className="h-1 w-[70%] rounded bg-gradient-to-r from-red-500 to-green-500"></div>
+      <span className="flex flex-col items-start justify-start gap-1 text-left">
+        <span className="text-sm">{props.high.label}</span>
+        <span className="text-base font-medium">{props.high.value}</span>
       </span>
     </div>
   );

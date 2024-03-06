@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import Link from "next/link";
+import Button from "./shared/Button";
 
 const GetStartedModal = () => {
   return (
@@ -16,20 +16,7 @@ const GetStartedModal = () => {
         width={100}
         alt="Getting started illustration"
       />
-      <Link
-        href="/"
-        className="flex items-center gap-2 rounded-md border-none bg-white px-4 py-2"
-      >
-        <span className="text-lg font-semibold text-black">
-          Get Started for FREE
-        </span>
-        <Image
-          src="/assets/images/right-arrow.png"
-          width={20}
-          height={10}
-          alt="right arrow"
-        />
-      </Link>
+      <Button btnText="Get Started for FREE" targetRoute="/" />
     </section>
   );
 };

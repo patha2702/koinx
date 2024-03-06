@@ -5,7 +5,7 @@ import TradingViewWidget from "./shared/TradingViewWidget";
 
 const Widget = () => {
   return (
-    <div className="flex w-full h-full flex-col gap-4 rounded-lg bg-white p-4">
+    <div className="flex size-full flex-col gap-4 rounded-lg bg-white p-4">
       <div className="flex justify-start gap-4">
         <div className="flex items-center justify-start gap-1">
           <Image
